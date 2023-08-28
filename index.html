@@ -23,11 +23,39 @@
             </div>
         </div>      
         <div class="rightSide">
-            <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
-            <div></div>
-            <div>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</div>
-            <div></div>
-            <div>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</div>
+            <div class="rightSideDiv">
+                <div class="rightSideHeader">This is not a real online service! 
+                    You know you need something like this in your life to help you
+                     realize your deepest dreams.</div>
+                <div class="rightSideHeader">Sign up <em>now</em> to get started</div>
+                <div class="rightSideHeader">You <em>know</em> you want to.</div>
+            </div>
+            <div class="rightSideDiv">Let's do this!
+                <div class="inputField">
+                    <div class="inputColumn">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="name" required placeholder="Max">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="mail" required placeholder="max@example.com">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="error" required name="password">
+                    </div>
+                    <div class="inputColumn">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="name" id="lastname" required placeholder="Mustermann">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="number" id="phoneNumber" required title="not a valid phone number"
+                        pattern="^(?:\+49|0)(?:\s?\d{2,5}-\d{1,10}|\(\d{2,5}\)\s?\d{1,10})$">
+                        <label for="confirmPass">Confirm Password</label>
+                        <input type="password" name="password" id="confirmPass" class="error" required>
+
+                    </div>
+                </div>
+            </div>
+            <div class="rightSideDiv">
+                <button type="submit" class="submitBtn">Create Account</button>
+                <p>Already have an accout? <a href="https://www.shadet.de/">Log in</a></p>
+            </div>
         </div>    
               
     </div>
