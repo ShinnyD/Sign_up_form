@@ -104,14 +104,6 @@ input:focus {
     border-color: lightblue;
 }
 
-input:valid {
-    border-color: green;
-}
-
-input:invalid {
-    border-color: red;
-}
-
 label {
     font-family: 'Raleway';
 }
@@ -160,7 +152,6 @@ a {
     text-decoration: none;
     color: rgb(190, 175, 55);
 }
-
 
 
 
