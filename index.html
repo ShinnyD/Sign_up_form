@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    
-    
-    
+    <script src="js/scripts.js"defer></script>
 </head>
 <body>
     <div class="container">
@@ -19,7 +17,13 @@
             <img src="img/joel-filipe-building.jpg" alt="modern-looking buildings">
             <div class="headerBar">
                 <img src="img/acLogo.png" class="logo">
-                <p style="font-family: 'Raleway';">Agents Connected</p>
+                <p style="font-family: 'Raleway', 'sans-serif'">Agents Connected</p>
+            </div>
+            <div class="photoLink">
+                <p style="font-family: 'Raleway', 'sans-serif'">
+                    <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/RFDP7_80v5A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Unsplash</a>の<a href="https://unsplash.com/ja/@joelfilip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joel Filipe</a>が撮影した写真
+                </p>
             </div>
         </div>      
         <div class="rightSide">
@@ -30,8 +34,9 @@
                 <div class="rightSideHeader">Sign up <em>now</em> to get started</div>
                 <div class="rightSideHeader">You <em>know</em> you want to.</div>
             </div>
-            <div class="rightSideDiv">Let's do this!
-                <div class="inputField">
+            <div class="rightSideDiv">
+                <div class="formHeader">Get started!</div>
+                <form class="inputField">
                     <div class="inputColumn">
                         <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="name" required placeholder="Max">
@@ -39,21 +44,22 @@
                         <input type="email" id="email" name="mail" required placeholder="max@example.com">
                         <label for="password">Password</label>
                         <input type="password" id="password" class="error" required name="password">
+                        <div id="resultDiv"></div>
                     </div>
                     <div class="inputColumn">
                         <label for="lastName">Last Name</label>
                         <input type="text" name="name" id="lastname" required placeholder="Mustermann">
                         <label for="phoneNumber">Phone Number</label>
                         <input type="text" name="number" id="phoneNumber" required title="not a valid phone number"
-                        pattern="^(?:\+49|0)(?:\s?\d{2,5}-\d{1,10}|\(\d{2,5}\)\s?\d{1,10})$">
+                        pattern="^\d{7,15}$">
                         <label for="confirmPass">Confirm Password</label>
                         <input type="password" name="password" id="confirmPass" class="error" required>
-
                     </div>
-                </div>
+                    <button type="submit" class="submitBtn" onclick="checkPasswords()">Create Account</button>
+                </form>
             </div>
             <div class="rightSideDiv">
-                <button type="submit" class="submitBtn">Create Account</button>
+                
                 <p>Already have an accout? <a href="https://www.shadet.de/">Log in</a></p>
             </div>
         </div>    
